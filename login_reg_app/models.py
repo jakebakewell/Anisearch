@@ -15,12 +15,14 @@ class UserManager(models.Manager):
         registration_email = User.objects.filter(email=post_data['email'])
         if len(registration_email) > 0:
             errors["multiple_emails"] = "A user is all ready using that email."
-        user_birthday = datetime.strptime(post_data['birthday'], '%Y-%m-%d')
-        if user_birthday > datetime.today():
-            errors["birthday_future"] = "User birthday must be in the past."
-        user_birthday = datetime.strptime(post_data['birthday'], '%Y-%m-%d')
-        if user_birthday > datetime.today() - relativedelta(years=13):
-            errors["not_old_enough"] = "User must be at least 13."
+        if len(post_data['birthday']) == 0:
+            errors['no_birthday'] = "Must fill out birthday."
+        else:
+            user_birthday = datetime.strptime(post_data['birthday'], '%Y-%m-%d')
+            if user_birthday > datetime.today():
+                errors["birthday_future"] = "User birthday must be in the past."
+            if user_birthday > datetime.today() - relativedelta(years=13):
+                errors["not_old_enough"] = "User must be at least 13."
         if len(post_data['password']) < 8:
             errors["password"] = "Password must be at least 8 characters."
         if not post_data['password'] == post_data['password_confirm']:

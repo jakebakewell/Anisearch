@@ -47,3 +47,8 @@ h1{
 .header{
     background-color: #6BCAD3;
 }
+
+.messages{
+    list-style: none;
+    color: red;
+}
