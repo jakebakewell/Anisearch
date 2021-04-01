@@ -1,0 +1,59 @@
+a{
+    margin-right: 5rem;
+}
+
+#anisearch{
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    margin-left: 3rem;
+    align-self: center;
+}
+
+h1{
+    margin-left: 5rem;
+}
+
+.background{
+    background-color: #FAF9FA;
+}
+
+.header{
+    background-color: #6BCAD3;
+}
+
+#myaccount{
+    text-decoration: none;
+    color: black;
+}
+
+#logout{
+    text-decoration: none;
+    color: red;
+}
+
+span{
+    font-weight: bold;
+}
+
+#update{
+    margin-left: 5rem;
+}
+
+.remove-btn{
+    margin-left: 5rem;
+}
+
+.anime-list{
+    overflow: auto;
+    max-height: 60rem;
+}
+
+.anime-list img{
+    width: 20rem;
+}
+
+.messages{
+    list-style: none;
+    color: red;
+}

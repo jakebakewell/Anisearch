@@ -1,0 +1,58 @@
+a{
+    margin-right: 5rem;
+}
+
+#anisearch{
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    margin-left: 3rem;
+    align-self: center;
+}
+
+h1{
+    margin-left: 5rem;
+}
+
+.background{
+    background-color: #FAF9FA;
+}
+
+.header{
+    background-color: #6BCAD3;
+}
+
+#myaccount{
+    text-decoration: none;
+    color: black;
+}
+
+#logout{
+    text-decoration: none;
+    color: red;
+}
+
+#search_img{
+    width: 40rem;
+    height: 25rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+ul{
+    list-style: none;
+}
+
+span{
+    font-weight: bold;
+}
+
+.video_container{
+    margin-top: -2rem;
+    margin-right: 5rem;
+    padding-bottom: 1rem;
+}
+
+.info-image img{
+    width: 20rem;
+}
